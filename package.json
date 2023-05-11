@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "docx": "^8.0.4",
+    "docx-parser": "^0.2.1"
+  }
+}
