@@ -1,8 +1,8 @@
-const DocxParser = require('docx-parser');
-const parser = new DocxParser();
+console.log('4'.charCodeAt(0))  //52
+console.log('4'.charCodeAt(0).toString(2))  //  110100
 
-// 读取docx文件并解析文本
-const docxContent = fs.readFileSync('input2.docx');
-const parsedDocx = parser.parse(docxContent);
 
-console.log(parsedDocx.text); // 输出包含非断空格的字符串，非断空格将被转换为Unicode编码
+
+console.log('姚'.charCodeAt(0))  //  23002
+console.log('姚'.charCodeAt(0).toString(2))  // 101100111011010
+console.log('姚'.charCodeAt(0).toString(16))  //  59da
