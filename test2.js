@@ -1,8 +1,8 @@
-console.log('4'.charCodeAt(0))  //52
-console.log('4'.charCodeAt(0).toString(2))  //  110100
+const fs = require('fs')
 
+// 读取文件
+fs.readFile('./input2.docx','utf-8', (err, data) => {
+if (err) throw err;
 
-
-console.log('姚'.charCodeAt(0))  //  23002
-console.log('姚'.charCodeAt(0).toString(2))  // 101100111011010
-console.log('姚'.charCodeAt(0).toString(16))  //  59da
+console.log(data)
+})
