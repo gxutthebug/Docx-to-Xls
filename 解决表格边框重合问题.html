@@ -9,6 +9,7 @@
         body {
     margin: 0;
     padding: 0;
+    height: 3000px;
 }
 
 .table {
@@ -17,13 +18,14 @@
     width: 700px;
     height: 1000px;
     border: 1px solid black;
+    margin: auto;
 }
 
 .row {
     display: flex;
     flex: 1;
     flex-direction: row;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(242, 9, 9);
 }
 
 .row-40 {
@@ -49,13 +51,14 @@
     flex: 3;
 }
 
-.row:last-child .cell {  
-    border-right: none;
+.row:last-child {  
+    border-bottom: none;  
 }
 
 .row .cell:last-child {
     border-right: none;
 }
+
     </style>
 </head>
 <body>
