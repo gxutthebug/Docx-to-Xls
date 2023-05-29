@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flexbox Table</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.row-40 {
+    flex: 2;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.cell-6 {
+    flex: 1;
+}
+
+.cell-20 {
+    flex: 2;
+}
+
+.cell-30 {
+    flex: 3;
+}
+
+.row:last-child .cell {  
+    border-right: none;
+}
+
+.row .cell:last-child {
+    border-right: none;
+}
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="row">
+            <div class="cell cell-6"></div>
+            <div class="cell cell-6"></div>
+            <div class="cell cell-6"></div>
+            <div class="cell cell-6"></div>
+            <div class="cell cell-6"></div>
+            <div class="cell cell-6"></div>
+        </div>
+        <div class="row">
+            <div class="cell cell-20"></div>
+            <div class="cell cell-20"></div>
+            <div class="cell cell-30"></div>
+            <div class="cell cell-30"></div>
+        </div>
+        <div class="row"></div>
+        <div class="row row-40"></div>
+    </div>
+</body>
+</html>
+
+<!-- 在这个例子中，我们首先定义了一个名为.table的包含器，并设置其宽度为700px，高度为1000px。
+接下来，我们使用flex属性为.table中的.row设置了适当的宽度和高度，
+同时为每个.cell设置了适当的宽度。为了避免边框重合导致线条看起来过粗，
+我们移除了最后一个.row和每个.row中的最后一个.cell的右边框。 -->

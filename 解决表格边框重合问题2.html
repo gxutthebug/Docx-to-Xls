@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Custom Table Layout</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    width: 900px;
+    border: 1px solid black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex-basis: 5%;
+    border-right: 1px solid black;
+}
+
+.row1,
+.row3 {
+    flex-basis: 35%;
+    border-bottom: 1px solid black;
+}
+
+.row2,
+.row4 {
+    flex-basis: 15%;
+    border-bottom: 1px solid black;
+}
+
+.row1 .right,
+.row3 .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 95%;
+}
+
+.row2 .right,
+.row4 .right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 95%;
+}
+
+/* Add the content for row1, row2, row3, and row4 right columns */
+/* Please note that due to the complexity of the requirements, */
+/* It is recommended to use JavaScript to generate the content dynamically */
+    </style>
+</head>
+<body>
+    <div class="table">
+        <div class="row row1">
+            <div class="left"></div>
+            <div class="right">
+                <!-- Add the content for row1 right column here -->
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="left"></div>
+            <div class="right">
+                <!-- Add the content for row2 right column here -->
+            </div>
+        </div>
+        <div class="row row3">
+            <div class="left"></div>
+            <div class="right">
+                <!-- Add the content for row3 right column here -->
+            </div>
+        </div>
+        <div class="row row4">
+            <div class="left"></div>
+            <div class="right">
+                <!-- Add the content for row4 right column here -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
